@@ -1,0 +1,14 @@
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: JuneTea(六月清茶)
+email: junetea@126.com
+description: > # this means to ignore newlines until "baseurl:"
+  JuneTea(六月清茶) study on Computer Graphics, Game, Mobile Development, HTML 5 and Bioinformatics.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://junetea.github.io" # the base hostname & protocol for your site
+twitter_username: junetea1
+github_username:  junetea
+
+# Build settings
+markdown: kramdown
