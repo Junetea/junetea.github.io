@@ -4,20 +4,38 @@ layout: default
 
 <div class="home">
 
-  <h1 class="page-heading">最新文章</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
+  <div class="post-list">
+    {% for post in paginator.posts %}
+		<div class="post-preview">
+			<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+			    <h2>
+			      {{ post.title }}
+			    </h2>
+			    {% if post.subtitle %}
+			    <h3>
+			    	{{ post.subtitle }}
+			    </h3>
+			    {% endif %}
+			    <div class="post-content-preview">
+			        {{ post.content | strip_html | truncate:200 }}
+			    </div>
+			</a>
+			<p class="post-meta">
+				Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}
+			</p>
+		</div>		
     {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+  </div>
+  <nav>
+  	{% if paginator.previous_page > 0 %}
+  	<span class="page-previous">
+  		<a href="{{ site.url }}/{{ paginator.page }}">NEWER POSTS</a>
+  	</span>
+  	{% endif %}
+  	{% if paginator.next_page > 0 %}
+  	<span class="page-next">
+  		<a href="{{ site.url }}/{{ paginator.page }}">OLDER POSTS</a>
+  	</span>
+  	{% endif %}
+  </nav>
 </div>

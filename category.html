@@ -1,0 +1,26 @@
+---
+title: 分类
+layout: default
+permalink: /category/
+---
+
+<div class="container">
+	<div class="category-list">
+		{% for category in site.categories %}
+			<div id="{{ category[0] }}" class="one-category">
+				<h2 class="category-title">{{ category[0] }}({{ category[1] | size }})</h2>
+				{% for post in category[1] %}
+					<div class="category-preview">
+						<a href="{{ post.url | prepend: site.baseurl }}">
+							<h3 class="post-title">{{ post.title }}</h3>
+							{% if post.subtitle %}
+							<h4 class="post-subtitle">{{ post.subtitle }}</h4>
+							{% endif %}
+						</a>
+					</div>
+				{% endfor %}
+				
+			</div>
+		{% endfor %}
+	</div>
+</div>

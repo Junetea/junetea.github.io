@@ -5,10 +5,19 @@ title: JuneTea(六月清茶)
 email: junetea@126.com
 description: > # this means to ignore newlines until "baseurl:"
   JuneTea(六月清茶) study on Computer Graphics, Game, Mobile Development, HTML 5 and Bioinformatics. A cup of tea for the hot summer.
+
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://junetea.github.io" # the base hostname & protocol for your site
+
 twitter_username: junetea1
 github_username:  junetea
 
 # Build settings
 markdown: kramdown
+
+# Homepage settings
+paginate: 5
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md","README.zh.md", "junetea.github.io.esproj"]
+
+# Plugin
+gems: [jekyll-paginate]

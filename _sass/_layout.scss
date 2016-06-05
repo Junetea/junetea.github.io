@@ -25,21 +25,26 @@
 
 .trigger {
 	display: inline;
+	float: right;
+}
+
+.site-nav div a.active {
+	border-bottom: 3px solid #111;
 }
 
 .page-content {
 	max-width: $page-content;
 	min-height: 380px;
 	margin: 0px auto;
-	padding-top: 90px;
+	padding-top: 100px;
 	background-color: #fcfcfc;
 	box-shadow: 0 0 2px 2px #e6e6e6;
 }
 
-.wrapper {
+.content-wrapper {
 	display: inline-block;
 	max-width: 80%;
-	padding: 20px 10px 0 20px;
+	padding: 10px 10px 0 10px;
 }
 
 .page-heading {
@@ -47,7 +52,41 @@
 	font-weight: normal;
 }
 
+.post-content-preview {
+	text-align: justify;
+	text-justify: inter-ideograph;
+	text-indent: 2em;
+}
+
+.post-content {
+	text-align: justify;
+	text-justify: inter-ideograph;
+	text-indent: 2em;
+}
+
 .site-footer {
 	max-width: $page-content;
 	margin: 0px auto;
+}
+
+.footer-wrapper {
+	width: 100%;
+}
+
+.social-media-list {
+	margin: 0;
+}
+
+.social-media-list li {
+	display: inline-block;
+	margin: 12px auto;
+	padding: 0 5px 0 5px;
+}
+
+.contact-list {
+	margin: 0;
+}
+
+.footer-col {
+	text-align: center;
 }

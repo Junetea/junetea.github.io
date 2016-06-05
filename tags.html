@@ -1,0 +1,32 @@
+---
+title: 标签
+layout: default
+permalink: /tags/
+---
+
+<div class="container">
+	<div id="tag_cloud" class="tags">
+		{% for tag in site.tags %}
+			<a href="#{{ tag[0] }}" title="{{ tag[0] }}" rel="{{ tag[1].size }}">{{ tag[0] }}</a>
+		{% endfor %}
+	</div>
+	<hr />
+	<div id="tags-list">
+		{% for tag in site.tags %}
+			<div id="{{ tag[0] }}" class="one-tag">
+				<h2 class="tag-title">{{ tag[0] }}</h2>
+				{% for post in tag[1] %}
+					<div class="post-preview">
+						<a href="{{ post.url | prepend: site.baseurl }}">
+							<h3 class="post-title">{{ post.title }}</h3>
+							{% if post.subtitle %}
+							<h4 class="post-subtitle">{{ post.subtitle }}</h4>
+							{% endif %}
+						</a>
+					</div>
+				{% endfor %}
+				
+			</div>
+		{% endfor %}
+	</div>
+</div>

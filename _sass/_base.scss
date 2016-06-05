@@ -81,16 +81,16 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-    color: $brand-color;
+    color: $text-color;
     text-decoration: none;
 
-    &:visited {
-        color: darken($brand-color, 15%);
-    }
+    // &:visited {
+    //     color: darken($brand-color, 15%);
+    // }
 
     &:hover {
-        color: $text-color;
-        text-decoration: underline;
+        color: $hover-color;
+        text-decoration: none;
     }
 }
 
@@ -159,8 +159,8 @@ pre {
 
     > svg {
         display: inline-block;
-        width: 16px;
-        height: 16px;
+        width: 48px;
+        height: 48px;
         vertical-align: middle;
 
         path {

@@ -1,25 +1,13 @@
 <div id="sidemenu">
-	<div class="category-kit">
-		<div class="category-title">按主题分类</div>
-		<div class="category-list">
+	<div class="widget-kit">
+		<div class="widget-title">按主题分类</div>
+		<div class="widget-list">
 			<ul>
-				<li><a href="http://">游戏开发</a</li>
-				<li><a href="http://">图形学</a></li>
-				<li><a href="http://">生物信息学</a></li>
-				<li><a href="http://">H5开发</a></li>
-				<li><a href="http://">移动开发</a></li>
-			</ul>
-		</div>
-	</div>
-	<div class="category-kit">
-		<div class="category-title">按时间分类</div>
-		<div class="category-list">
-			<ul>
-				<li><a href="http://">2016年6月</a></li>
-				<li><a href="http://">2016年5月</a></li>
-				<li><a href="http://">2016年4月</a></li>
-				<li><a href="http://">2016年3月</a></li>
-				<li><a href="http://">2016年2月</a></li>
+				{% for category in site.categories %}
+					<li>
+						<a href="/category/#{{ category[0] }}">{{ category[0] }}({{ category[1] | size }})</a>
+					</li>
+				{% endfor %}
 			</ul>
 		</div>
 	</div>
