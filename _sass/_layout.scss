@@ -67,10 +67,40 @@
 	text-indent: 2em;
 }
 
+.pager {
+	margin: 0;
+}
+
+.pager li {
+	display: inline-block;
+	text-align: center;
+	width: 48%;
+	border: solid 1px #ddd;
+}
+
+.pager li > a {
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.pager li span {
+	display: block;
+	color: gray;
+}
+
+.previous {
+	float: left;
+}
+
+.next {
+	float: right;
+}
+
 .v-line {
 	display: inline-block;
 	position: absolute;
 	top: 0;
+	right: 18%;
 	bottom: 0;
 	width: 1px;
 	background-color: #e6e6e6;
