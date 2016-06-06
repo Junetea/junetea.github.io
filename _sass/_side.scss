@@ -1,10 +1,12 @@
 #sidemenu {
 	float: right;
 	display: inline-block;
-	// position: fixed;
-	// top: 100px;
-	// right: 50px;
-	max-width: 20%;
+	position: absolute;
+	top: 100px;
+	right: 0;
+	bottom: 0;
+	left: 83%;
+	// width: 20%;
 	padding: 10px 10px 0 10px;
 	border-color: #ccc;
 	border-width: 1px;
