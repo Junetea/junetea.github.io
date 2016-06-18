@@ -27,16 +27,16 @@ layout: default
 		<hr />
     {% endfor %}
   </div>
-  <nav>
-  	{% if paginator.previous_page > 0 %}
-  	<span class="page-previous">
-  		<a href="{{ site.url }}/{{ paginator.page }}">NEWER POSTS</a>
-  	</span>
+  <ul class="pager index-nav">
+  	{% if paginator.previous_page %}
+  	<li class="previous">
+  		<a href="{{ paginator.previous_page_path }}">最新风貌</a>
+  	</li>
   	{% endif %}
-  	{% if paginator.next_page > 0 %}
-  	<span class="page-next">
-  		<a href="{{ site.url }}/{{ paginator.page }}">OLDER POSTS</a>
-  	</span>
+  	{% if paginator.next_page %}
+  	<li class="next">
+  		<a href="{{ paginator.next_page_path }}">历史烟云</a>
+  	</li>
   	{% endif %}
-  </nav>
+  </ul>
 </div>

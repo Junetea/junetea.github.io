@@ -7,7 +7,7 @@ description: > # this means to ignore newlines until "baseurl:"
   JuneTea(六月清茶) study on Computer Graphics, Game, Mobile Development, HTML 5 and Bioinformatics. A cup of tea for the hot summer.
 
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://junetea.github.io" # the base hostname & protocol for your site
+url: "http://junetea.com" # the base hostname & protocol for your site
 
 twitter_username: junetea1
 github_username:  junetea
