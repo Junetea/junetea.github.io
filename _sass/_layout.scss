@@ -56,19 +56,40 @@
 }
 
 .post-content-preview {
+	color: #666;
 	text-align: justify;
 	text-justify: inter-ideograph;
-	text-indent: 2em;
+}
+
+.post-preview h2 {
+	margin: 10px 0;
+}
+
+.post-link {
+	&:visited {
+		color: gray;
+	}
+}
+
+.post-meta {
+	color: gray;
+	font-style: italic;
+	font-family: Lora, 'Times New Roman', serif;
+	margin: 5px 0;
 }
 
 .post-content {
 	text-align: justify;
 	text-justify: inter-ideograph;
-	text-indent: 2em;
+	// text-indent: 2em;
+}
+
+.post-content p, .post-content h3 {
+	margin: 18px 0;
 }
 
 .pager {
-	margin: 0;
+	margin: 18px 0;
 }
 
 .pager li {
@@ -127,6 +148,10 @@
 
 .contact-list {
 	margin: 0;
+}
+
+.contact-list li {
+	list-style: none;
 }
 
 .footer-col {

@@ -24,32 +24,11 @@ body {
 }
 
 /**
- * Set `margin-bottom` to maintain vertical rhythm
- */
-h1, h2, h3, h4, h5, h6,
-p, blockquote, pre,
-ul, ol, dl, figure,
-%vertical-rhythm {
-    margin-bottom: $spacing-unit / 2;
-}
-
-/**
  * Images
  */
 img {
     max-width: 100%;
     vertical-align: middle;
-}
-
-/**
- * Figures
- */
-figure > img {
-    display: block;
-}
-
-figcaption {
-    font-size: $small-font-size;
 }
 
 /**
@@ -66,53 +45,15 @@ li {
     }
 }
 
-li {
-    list-style: none;
-}
-
-/**
- * Headings
- */
-h1, h2, h3, h4, h5, h6 {
-    font-weight: $base-font-weight;
-}
-
-/**
- * Links
- */
 a {
     color: $text-color;
     text-decoration: none;
-
-    // &:visited {
-    //     color: darken($brand-color, 15%);
-    // }
 
     &:hover {
         color: $hover-color;
         text-decoration: none;
     }
 }
-
-
-
-/**
- * Blockquotes
- */
-blockquote {
-    color: $grey-color;
-    border-left: 4px solid $grey-color-light;
-    padding-left: $spacing-unit / 2;
-    font-size: 18px;
-    letter-spacing: -1px;
-    font-style: italic;
-
-    > :last-child {
-        margin-bottom: 0;
-    }
-}
-
-
 
 /**
  * Code formatting
@@ -138,6 +79,26 @@ pre {
         padding-right: 0;
         padding-left: 0;
     }
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table th {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.025);
+}
+
+table td, table th {
+    padding: 0.25em 0.25em;
+    border: 1px solid rgb(216, 216, 216);
+}
+
+hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-top: 1px solid #eee;
 }
 
 /**
