@@ -202,7 +202,7 @@ import {
   TouchableHighlight,
 } from 'react-native';
 
-//1. 到处默认类
+//1. 导出默认类
 export default class SecondScene extends Component {
   render() {
     return (
