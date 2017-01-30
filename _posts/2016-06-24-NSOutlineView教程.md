@@ -1,3 +1,11 @@
+---
+layout: post
+title:  "NSOutlineView教程"
+date:   2016-06-24 13:25:00 +0800
+category: 翻译
+tags: [OS X, Objective-C, NSOutlineView]
+---
+
 >感谢**Jean-Pierre Distler**的《[NSOutlineView on OS X Tutorial](https://www.raywenderlich.com/123463/nsoutlineview-os-x-tutorial)》。
 
 编写应用程序时，通常需要展示列表结构的数据，例如展示一个菜单列表。这样的数据使用`NSTableView`很容易搞定。但是如果按开胃菜或者主菜分组怎么办？现在就有一个问题了，因为表视图没有分组功能。你无法搞定你的多级菜单。
