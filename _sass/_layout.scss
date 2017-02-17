@@ -45,8 +45,9 @@
 }
 
 .content-wrapper {
+	float: left;
 	display: inline-block;
-	max-width: 80%;
+	max-width: 75%;
 	padding: 10px;
 }
 
@@ -125,10 +126,14 @@
 	display: inline-block;
 	position: absolute;
 	top: 0;
-	right: 18%;
+	right: 22%;
 	bottom: 0;
 	width: 1px;
 	background-color: #e6e6e6;
+}
+
+.clear {
+	clear: both;
 }
 
 .site-footer {
@@ -162,8 +167,12 @@
 	text-align: center;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 640px) {
 	.content-wrapper {
 		max-width: 100%;
+	}
+	
+	.v-line {
+		display: none;
 	}
 }
